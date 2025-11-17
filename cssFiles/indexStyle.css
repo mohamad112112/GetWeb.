@@ -1,0 +1,543 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding-left:16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*small
+the contaier will take the full width untill we reach the width of 768px then will start to take a specific width*/
+@media (min-width:768px){
+    .container{
+        width: 900px;
+    }
+}
+/*medium*/
+@media (min-width:992px){
+    .container{
+        width: 1100px;
+    }
+}
+/*large*/
+@media (min-width:1200px){
+    .container{
+        width: 1300px;
+    }
+}
+:root{
+    --primary-color:#1567d2;
+    --secondary-color:#0b0a0b;
+    --text-color:#3699e1;
+    --real-text-color:#e6e6ff;
+    --font-normal:18px;
+    --trasntion-delay:0.3s;
+}
+/*header start*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+
+}
+header .container .logo{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+    overflow: hidden;
+    background-color: black;
+    margin-left: 30px;
+}
+header .container .logo img{
+    width: 100%;
+}
+header .container .nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+}
+header .container .nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--primary-color);
+    font-size:var(--font-normal);
+    transition: all var(--trasntion-delay);
+    padding: 10px;
+}
+header .container .nav li a:hover{
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+.landing{
+    width: 100%;
+    height: calc(100dvh - 70px);
+}
+.landing .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.landing .container img{
+    width: 60%;
+}
+.landing .container .text{
+    width: 40%;
+    padding: 15px;
+    line-height: 1.7;
+}
+.landing .container .text h2{
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 32px;
+    margin: -10px 0 20px 0;
+    position: relative;
+}
+.landing .container .text h2::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+
+.landing .container .text p{
+    font-size: 20px;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+
+
+
+.services{
+    width: 100%;
+    height: 100dvh;
+}
+.services .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+.services .container .heading ,.AboutUs .heading{
+    height: 20%;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.9;
+}
+.services .container .heading p{
+    font-size: var(--font-normal);
+}
+.services .container h2{
+    font-size: 40px;
+}
+.services .container h2 span{
+    color: var(--primary-color);
+}
+.services .container .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 30px;
+    width: 90%;
+    margin: 30px auto;
+    height: 80%;
+}
+.services .container .cards .card{
+    height: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.services .container .cards .card h3{
+    font-size: 28px;
+    color: var(--primary-color);
+}
+.services .container .cards .card i{
+    font-size: 40px;
+    color: var(--secondary-color);
+    padding: 10px;
+}
+.services .container .cards .card .text{
+    padding: 10px;
+    color: var(--secondary-color);
+    font-size:var(--font-normal);
+    line-height: 1.4;
+    text-align: center;
+} 
+.services .container .cards .card .text .title{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.services .container .cards .card a{
+    text-decoration: none;
+    font-size: var(--font-normal);
+    border-radius: 10px;
+    padding: 9px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all var(--trasntion-delay);
+}
+.services .container .cards .card a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+/*start about us section*/
+.AboutUs{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction:column;
+    background-color:#00204A;
+}
+.AboutUs .heading{
+    color: white;
+}
+.AboutUs .heading h2 span{
+    color: var(--primary-color);
+}
+.AboutUs .heading h2{
+    font-size: 40px;
+}
+
+.AboutUs .container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AboutUs .container .about{
+    width:40%;
+}
+.AboutUs .container .elements{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+}
+.AboutUs .container .elements .text{
+    line-height: 1.6;
+    width: 80%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+}
+.AboutUs .container .elements h2{
+    color: var(--primary-color);
+    font-size: 32px;
+    padding: 15px;
+    position: relative;
+}
+.AboutUs .container .elements h2::before{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 130%;
+    color: white;
+    height: 7px;
+    background-color: white;
+    border-radius: 10px;
+}
+.AboutUs .container .elements a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all var(--trasntion-delay);
+}
+.AboutUs .container .elements a:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+/*why us starts*/
+.WhyUs{
+    width: 100%;
+    height: 200dvh;
+    padding: 50px 0 50px 0;
+}
+.WhyUs .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.WhyUs .container .heading{
+    height: 20%;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.WhyUs .container .cards-container{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 25%);
+    margin: auto 0;
+    gap: 40px;
+    padding:40px;
+}
+.WhyUs .container .cards-container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.WhyUs .container .heading h2{
+    color: var(--secondary-color);
+    font-size: 40px;
+    padding: 10px;
+    letter-spacing: 4px;
+    position: relative;
+}
+.WhyUs .container .heading h2::before{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: -27%;
+    width: 150%;
+    color: white;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+.WhyUs .container .heading h2 span{
+    color: var(--primary-color);
+}
+.WhyUs .container .cards-container .card i{
+    font-size: 45px;
+    border: 3px solid var(--secondary-color);
+    padding: 21px;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+.WhyUs .container .cards-container .card h2{
+    font-size: 32px;
+    color: var(--primary-color);
+    padding: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.WhyUs .container .cards-container .card p{
+    text-align: center;
+    font-size: 21px;
+    padding: 20px;
+    line-height: 1.3;
+}
+/*contact start*/
+.contact{
+    width: 100%;
+    height: 100dvh;
+    padding: 30px;
+    background-color: #00204A;
+    margin: 80px 0 0 0;
+}
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contact .container .heading{
+    height: 20%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px
+}
+.contact .container .heading h2{
+    font-size: 40px;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+.contact .container .heading h2 span{
+    color: var(--primary-color);
+}
+.contact .container .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+}
+.contact .container .form-container img{
+    width: 45%;
+}
+.contact .container .form-container form{
+    height: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+}
+.contact .container .form-container form div,.contact .container .form-container form #submit{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.contact .container .form-container form div label{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+.contact .container .form-container form div input:not([type="submit"]){
+    width: 55%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact .container .form-container form input[type ="submit"]{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 50% !important;
+    cursor: pointer;
+    transition:var(--trasntion-delay);
+}
+.contact .container .form-container form input[type ="submit"]:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+.contact .container .form-container form .text textarea{
+    width: 61%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+/*footer starts*/
+.footer{
+    width: 100%;
+    height: 40dvh;
+    background-color: #eee;
+    padding: 20px;
+}
+.footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer .container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 25%;
+}
+.footer .container div:not(:last-child){
+    border-right: 1px solid #777;
+}
+.footer .container h2{
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.footer .container .info .names{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.footer .container .info >p{
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.footer .container .links a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px;
+    color: var(--secondary-color);
+    transition: all var(--trasntion-delay);
+}
+.footer .container .links a:hover{
+    color: var(--primary-color);
+}
+.footer .container .contact-link a{
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 10px;
+}
+.footer .container .contact-link a:hover{
+    color: var(--primary-color);
+}
+.footer .container .log-in p{
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.footer .container .log-in a{
+    text-decoration: none;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all var(--trasntion-delay);
+}
+.footer .container .log-in a:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,218 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: var(--secondary-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+header .container img{
+    width: 100px;
+    margin: auto 0;
+}
+header .container .header-nav{
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .header-nav a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    color: var(--primary-color);
+}
+header .container .header-nav a:hover{
+    color: var(--text-color);
+}
+.navBar{
+    height: calc(100dvh - 60px);
+    padding: 20px;
+    background-color: var(--primary-color);
+    width: 100px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.navBar:hover{
+    width: 30vw;
+}
+.navBar .left-nav{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.navBar .left-nav a{
+    font-weight: 400;
+    display: flex;
+    padding: 15px;
+    margin: 10px 0;
+    gap: 40px;
+    color: var(--secondary-color);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.navBar .left-nav a i{
+    font-size: 30px;
+}
+.navBar .left-nav a:hover, .active,.boxes .box:hover, td:hover{
+    background-color: #ffffff55;
+}
+.navBar .left-nav .profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navBar .left-nav .profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.navBar .left-nav .profile .img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid white;
+    flex-shrink: 0;
+    margin-left: 5px;
+}
+.navBar .left-nav .profile .img-box img{
+    width: 100%;
+}
+.log-out{
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+}
+.log-out a{
+    background-color: #a00;
+}
+.content-nav{
+    display: flex;
+}
+.content{
+    background-color: var(--secondary-color);
+    padding: 15px;
+    width: 100%;
+}
+.content .title-info{
+    width: 80%;
+    background-color:var(--primary-color);
+    margin: 0 auto;
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 7px;
+}
+.content .title-info p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+.content .title-info i{
+    font-size: 20px;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+    gap: 10px;
+}
+.boxes .box{
+    flex-basis: 150px;
+    flex-grow: 1;
+    height: 150px;
+    background-color: #123;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+    color: var(--primary-color);
+    padding: 15px;
+}
+.boxes .box i{
+    font-size: 40px;
+}
+.boxes .box .text{
+    text-align: center;
+}
+.boxes .box .text span{
+    font-size: 30px;
+}
+table{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    border-spacing: 7px;
+}
+td , th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: var(--primary-color);
+}
+.price , .NOP{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    color: gold;
+}
+.NOP{
+    color: green;
+}
+.content table tbody .action a{
+    padding: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.content table tbody .action a:hover{
+    color: var(--secondary-color);
+}
+.content table tbody .delet a{
+    font-size: 22px;
+    color: red;
+}
+.bullshit {
+    position: relative;
+}
+.bullshit .addUser{
+    position: absolute;
+    right: 50%;
+    top: 130%;
+    font-size: 26px;
+    color: var(--secondary-color);
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.bullshit .addUser:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.action a:last-of-type{
+    color: red !important;
+}

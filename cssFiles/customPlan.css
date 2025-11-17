@@ -1,0 +1,121 @@
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:15px;
+    background-color: var(--secondary-color);
+}
+header .container .logo{
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+header .container a{
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: 0.3s;
+}
+header .container a:hover{
+    color: white;
+}
+/*content starts*/
+.content{
+    height: 90dvh;
+}
+.content .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.content .container h1{
+    height: 15%;
+    color: var(--secondary-color);
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 30px;
+    position: relative;
+}
+.content .container h1 span{
+    color: var(--primary-color);
+}
+.content .container .down-content{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.content .container .down-content form{
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly
+}
+.content .container .down-content form > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content .container .down-content form .item1 input[type="text"]{
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+.content .container .down-content form .item1 .check-container,.content .container .down-content form
+.radio-container{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content .container .down-content form .item1 .check-container p:first-of-type,.content .container .down-content form
+.radio-container p:first-of-type{
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: var(--primary-color)
+}
+.content .container .down-content form .item1 .check-container .check-filed,
+.content .container .down-content form .radio-container .radio-field{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.content .container .down-content form .item1 .check-container .check-filed label,
+.content .container .down-content form .radio-container .radio-field label{
+        color: var(--secondary-color);
+}
+.content .container .down-content form .item2 textarea{
+    height: 150px;
+    border-radius: 8px;
+    padding: 9px;
+    border: 1px solid var(--primary-color);
+}
+.content .container .down-content form .item2 input[type="submit"]{
+    padding: 8px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    transition: all 0.3s;
+}
+.content .container .down-content form .item2 input[type="submit"]:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.down-content > p{
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    width: 73%;
+}

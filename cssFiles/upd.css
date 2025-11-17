@@ -1,0 +1,107 @@
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:15px;
+    background-color: var(--secondary-color);
+}
+header .container .logo{
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+header .container a{
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: 0.3s;
+}
+header .container a:hover{
+    color: white;
+}
+.content{
+    height: 90dvh;
+    width: 100%;
+}
+.content .form-container{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content .form-container h2{
+    font-size: 35px;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    height: 20%;
+    text-align: center;
+    padding: 27px;
+}
+.content .form-container form{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+.content .form-container form input[type="text"],.content .form-container form input[type="email"]{
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    width: 100%;
+}
+.content .form-container form > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content .form-container .item1 .check-container,.content .form-container form
+.radio-container{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content .form-container form .item1 .check-container p:first-of-type,.content .form-container form
+.radio-container p:first-of-type{
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: var(--primary-color)
+}
+.content .form-container  form .item1 .check-container .check-filed,
+.content .form-container  form .radio-container .radio-field{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.content .form-container form .item1 .check-container .check-filed label,
+.content .form-container  form .radio-container .radio-field label{
+        color: var(--secondary-color);
+}
+.content .form-container  form .item2 textarea{
+    height: 150px;
+    border-radius: 8px;
+    padding: 9px;
+    border: 1px solid var(--primary-color);
+}
+.content .form-container  form .item2 input[type="number"]{
+    padding: 9px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+}
+
+.content .form-container form .item2 input[type="submit"]{
+    padding: 8px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    transition: all 0.3s;
+}
+.content .form-container form .item2 input[type="submit"]:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}

@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Container section*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding-left:16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*small
+the contaier will take the full width untill we reach the width of 768px then will start to take a specific width*/
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/*medium*/
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/*large*/
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+/*heading*/
+.special-heading{
+    font-size: 60px;
+    color: var(--text-color);
+    background-image: linear-gradient(to bottom,var(--secondary-color),var(--primary-color));
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.special-heading + p{
+    color:var(--real-text-color);
+    margin-top: -27px;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+:root{
+    --primary-color:#1567d2;
+    --secondary-color:#0b0a0b;
+    --text-color:#3699e1;
+    --real-text-color:#e6e6ff;
+}
+/*end of golbal rules*/
+header{
+    width: 100%;
+    height: 60px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 30px;
+}
+.price-card{
+    width: 300px;
+    height: 90%;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 6.6px 13.1px 13.1px hsl(0deg 0% 0% / 0.30);
+    position: relative;
+}
+.footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 40px;
+    color: var(--real-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.features .container .card .text p{
+    padding: 7px;
+    font-size:18px;
+    color: var(--real-text-color);
+}

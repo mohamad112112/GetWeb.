@@ -1,0 +1,51 @@
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:15px;
+    background-color: var(--secondary-color);
+}
+header .container .logo{
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+header .container a{
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: 0.3s;
+}
+header .container a:hover{
+    color: white;
+}
+.select-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9px;
+    color:var(--text-color);
+    font-size: 16px;
+}
+.select-container select{
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    width: 50%;
+    text-align: center;
+}
+.select-container select option{
+    padding: 9px;
+    border-bottom: 1px solid var(--primary-color);
+}
+textarea{
+    width: 100%;
+    padding: 9px;
+    border: 1px solid var(--primary-color);
+    height: 100px;
+    border-radius: 8px;
+}
+.content .container .form-container form{
+    height: 80% !important;
+}

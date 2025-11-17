@@ -1,0 +1,226 @@
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-bottom: 1px solid var(--primary-color);
+}
+.container #logo{
+    width: 70px;
+}
+.container span a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.landing{
+    background-image: url(../images/landing.jpg);
+    width: 100%;
+    height: calc(100dvh - 60px);
+    background-size: cover;
+}
+.landing .land{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    height: 100%;
+}
+.landing .land .text{
+    text-align: center;
+    width: 50%;
+    line-height: 1.5;
+    color: var(--text-color);
+    padding: 20px;
+}
+.landing .land h1{
+    margin: 0;
+}
+.landing .land .fp{
+    font-size: 30px;
+}
+.landing .land p:last-of-type{
+    color: var(--real-text-color);
+    font-size: 19px;
+    padding: 25px 0 10px 0;
+}
+.landing .land button{
+    padding: 7px;
+    background-color:var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color:var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.landing .land button:hover{
+    padding: 9px;
+    color:white;
+    font-weight: bold;
+}
+/*end of landing*/
+/*start of hdwo*/
+.HDWO{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+.HDWO .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.HDWO .container div{
+    padding: 25px;
+    line-height: 1.7;
+    background-image: linear-gradient(to top,var(--secondary-color),var(--primary-color));
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    width: 80%;
+    position: relative;
+    transform: scale(0.8);
+}
+.HDWO .container div h3{
+    margin: 0;
+    font-size: 29px;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+.HDWO .container div h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    background-color: var(--secondary-color);
+    height: 10px;
+    left: 0;
+    opacity: 0.6;
+}
+.HDWO .container div p{
+    color: var(--real-text-color);
+    padding: 10px;
+    font-size: 20px;
+}
+.HDWO .container div i{
+    position: absolute;
+    right: -26%;
+    font-size: 17em;
+    z-index: -1;
+    color: var(--secondary-color);
+    max-height: 100%;
+    bottom: 5%;
+}
+.HDWO .container .S{
+    margin-right: 100px;
+}
+.HDWO .container .Th{
+    margin-right: 200px;
+}
+/*end of HDWo*/
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.features .container .card img{
+    width: 100px;
+}
+.features .container .card{
+    padding: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    border-top: 2px solid var(--primary-color);
+}
+.features .container .card .text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    line-height: 1.4;
+}
+.features .container .card .text h4{
+    color: var(--text-color);
+}
+.features .container .card .text p{
+    color: var(--secondary-color)
+}
+/*end features*/
+.Pricing{
+    height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+}
+.Pricing .container{
+    padding: 60px 30px;
+    height: 100%;
+}
+.Pricing .container .price-card h3{
+    font-size: 26px;
+    color: wheat;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+}
+.Pricing .container .price-card h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    background-color: var(--secondary-color);
+    height: 5px;
+    left: 0;
+    opacity: 0.6;
+}
+.Pricing .container .price-card h2{
+    font-size: 34px;
+    padding: 10px;
+    font-weight: bold;
+}
+.Pricing .container .price-card .text{
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    padding: 15px;
+    color:var(--real-text-color);
+    transform: translateX(20px);
+}
+.Pricing .container .price-card button{
+    padding: 7px;
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color:var(--primary-color);
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.Pricing a{
+    text-decoration: none;
+    padding: 7px;
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color:var(--primary-color);
+    cursor: pointer;
+    position: absolute;
+    left:50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    transition: all 0.3s;
+    box-shadow: 6.6px 13.1px 13.1px hsl(0deg 0% 0% / 0.30);
+}
+.Pricing .container .price-card button:hover{
+    padding: 9px;
+    color:white;
+    font-weight: bold;
+}
+.Pricing a:hover{
+    padding: 9px;
+    color:white;
+    font-weight: bold;
+}
